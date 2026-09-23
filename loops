@@ -1,0 +1,42 @@
+import turtle
+from turtle import *
+t = Turtle()
+
+t.shape('turtle')
+
+def square(x):
+    for i in range(4):
+        t.forward(x)
+        t.right(90)
+
+""" for i in range(3):
+    print(i) """
+
+""" for i in range(60):
+    square(100)
+    t.right(5)
+print(i) """
+
+def triangle(x):
+    for _ in range(3):
+        t.forward(x)
+        t.left(120)
+
+triangle(100)
+
+"""sidelength = 100
+rotate = 90
+def square(x,y):
+    for i in range(4):
+        t.forward(x)
+        t.left(y)
+triangle(100) """
+
+def doubleSquares(iRange):
+    length = 25
+    for i in range(iRange):
+        square(length, 90)
+        length = length * 2
+doubleSquares(5)
+
+turtle.done()
