@@ -7,7 +7,7 @@ t.shape('turtle')
 def square(x):
     for i in range(4):
         t.forward(x)
-        t.right(90)
+        t.left(90)
 
 """ for i in range(3):
     print(i) """
@@ -17,12 +17,12 @@ def square(x):
     t.right(5)
 print(i) """
 
-def triangle(x):
+""" def triangle(x):
     for _ in range(3):
         t.forward(x)
         t.left(120)
 
-triangle(100)
+triangle(100) """
 
 """sidelength = 100
 rotate = 90
@@ -32,11 +32,18 @@ def square(x,y):
         t.left(y)
 triangle(100) """
 
-def doubleSquares(iRange):
+""" def doubleSquares(iRange):
     length = 25
     for i in range(iRange):
-        square(length, 90)
+        square(length)
         length = length * 2
-doubleSquares(5)
+doubleSquares(5) """
+
+def addSquares(iRange):
+    length = 25
+    for i in range(iRange):
+        square(length)
+        length += 25
+addSquares(5)
 
 turtle.done()
