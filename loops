@@ -12,26 +12,25 @@ def square(x):
 """ for i in range(3):
     print(i) """
 
-""" for i in range(60):
-    square(100)
-    t.right(5)
-print(i) """
+""" for i in range(4):
+    t.forward(100)
+    t.left(90) """
 
 """ def triangle(x):
     for _ in range(3):
         t.forward(x)
         t.left(120)
 
-triangle(100) """
+triangle(100)
 
-"""sidelength = 100
+sidelength = 100
 rotate = 90
 def square(x,y):
     for i in range(4):
         t.forward(x)
         t.left(y)
-triangle(100) """
-
+triangle(100)
+ """
 """ def doubleSquares(iRange):
     length = 25
     for i in range(iRange):
@@ -39,11 +38,26 @@ triangle(100) """
         length = length * 2
 doubleSquares(5) """
 
-def addSquares(iRange):
-    length = 25
+""" for i in range(60):
+    length = 5
+    square(length)
+    t.left(5)
+    length * 5
+print(i)"""
+
+""" def SixtySquares(iRange):
+    length = 5 
     for i in range(iRange):
         square(length)
-        length += 25
-addSquares(5)
+        length = length + 5
+        t.right(5)
+SixtySquares(60)
+ """
+""" def addSquares():
+    length = 5
+    for i in range(60):
+        square(length)
+        length += 5
+addSquares() """
 
 turtle.done()
