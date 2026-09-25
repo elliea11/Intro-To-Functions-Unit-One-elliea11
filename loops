@@ -60,4 +60,6 @@ SixtySquares(60)
         length += 5
 addSquares() """
 
+def star(x,y):
+
 turtle.done()
