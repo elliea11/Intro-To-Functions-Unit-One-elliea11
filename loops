@@ -60,6 +60,18 @@ SixtySquares(60)
         length += 5
 addSquares() """
 
-def star(x,y):
+def star(x):
+    for i in range(5):
+        t.forward(x)
+        t.left(144)
+star(5)
+
+def StarSpiral(iRange):
+    length = 10
+    for i in range(iRange):
+        star(length)
+        length = length + 10
+        t.right(5)
+StarSpiral(60)
 
 turtle.done()
